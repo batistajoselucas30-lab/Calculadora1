@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculadora">
+        <div class="resultado">
+            <output id="display" class="display">0</output>
+        </div>
+
+        <div class="teclado">
+            <div class="primeira-linha-botão">
+                <button id="sinal" class="caracter" onclick="inverterSinal()">+/-</button>
+                <button id="sinal" class="caracter" onclick="adicionarCaractere('%')">%</button>
+                <button id="sinal" class="caracter" onclick="adicionarCaractere(':')">:</button>
+                <button id="sinal" class="caracter" onclick="Calcular()">=</button>
+            </div>
+            <div class="segunda-linha-botão">
+                <button onclick="adicionarCaractere('7')">7</button>
+                <button onclick="adicionarCaractere('8')">8</button>
+                <button onclick="adicionarCaractere('9')">9</button>
+                <button id="sinal" class="caracter" onclick="adicionarCaractere('x')">x</button>
+            </div>
+            <div class="terceira-linha-botão">
+                <button onclick="adicionarCaractere('4')">4</button>
+                <button onclick="adicionarCaractere('5')">5</button>
+                <button onclick="adicionarCaractere('6')">6</button>
+                <button id="sinal" class="caracter" onclick="adicionarCaractere('-')">-</button>
+            </div>
+            <div class="quarta-linha-botão">
+                <button onclick="adicionarCaractere('1')">1</button>
+                <button onclick="adicionarCaractere('2')">2</button>
+                <button onclick="adicionarCaractere('3')">3</button>
+                <button id="sinal" class="caracter" onclick="adicionarCaractere('+')">+</button>
+            </div>
+            <div class="quarta-linha-botão">
+                <button id="sinal" class="caracter" onclick="adicionarCaractere(',')">,</button>
+                <button onclick="adicionarCaractere('0')">0</button>
+                <button class="caracter" onclick="Limpar()">Limpar</button>
+            </div>
+        </div>
+    </div>
+    <script src="java.js"></script>
+</body>
+</html>

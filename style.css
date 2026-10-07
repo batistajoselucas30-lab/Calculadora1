@@ -1,0 +1,77 @@
+body {
+  display: flex;
+  justify-content: center; 
+  align-items: center;    
+  min-height: 100vh;
+}
+.calculadora{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 250px;
+    height: 380px;
+    background-color: black;
+    padding: 6px 6px;
+    
+    
+}
+.resultado{
+  height: 50px;
+  width: 236px;
+  border: 1px solid black;
+  margin-top: 6px;
+  margin-left: 6px;
+  background-color: white;
+}
+output{
+  margin-left: 2px;
+  font-size: 25px;
+}
+.primeira-linha-botão{
+  display: flex;   
+}
+.segunda-linha-botão{
+  display: flex; 
+}
+.terceira-linha-botão{
+  display: flex; 
+}
+.quarta-linha-botão{
+  display: flex; 
+}
+.quinta-linha-botão{
+  display: flex; 
+}
+button{
+  width: 55px;
+  height: 55px;
+  border-radius: 100%;
+  margin-left: 6px;
+  margin-top: 6px;
+  border: 1px solid black;
+  background-color: grey;
+  cursor: pointer;
+  color: white;
+  font-size: 25px;
+}
+#sinal{
+  font-size: 25px;
+}
+.sinal-de-divisão{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 1px solid black;
+}
+.caracter{
+  background-color: yellow;
+  color: black;
+  font-size: 15px;
+}
+.display {
+    max-width: 100%;
+    overflow: hidden;         /* Esconde qualquer texto que ultrapasse */
+    text-overflow: ellipsis;  /* Coloca '...' se ultrapassar */
+    white-space: nowrap;      /* Impede quebra de linha */
+}
